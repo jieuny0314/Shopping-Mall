@@ -1,0 +1,49 @@
+$mainColor: #ff0000;
+
+.wow-enter {
+  opacity : 0;
+}
+
+.wow-enter-active {
+  opacity: 1;
+  transition: all 500ms;
+}
+
+.red {
+  color: $mainColor;
+}
+
+@mixin function(){
+  background: #eeeeee;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto; 
+}
+
+.myAlert {
+  @include function()
+}
+
+.myAlert {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.myAlert2 {
+  @extend .myAlert;
+  background: yellow;
+}
+
+
+
+// div.container {
+//   h4 {
+//     color: blue;
+//   }
+//   p {
+//     color: pink;
+//   }
+// }
